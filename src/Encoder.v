@@ -158,20 +158,6 @@ module Encoder(
 								 nextState <= "R3";
 							 end
 					  end
-					  // R3
-					  "R3" : begin
-							 LED <= 1'b1;
-
-							 if (B == 1'b0) begin
-								 nextState <= "R2";
-							 end
-							 else if (A == 1'b1) begin
-								 nextState <= "add";
-							 end
-							 else begin
-								 nextState <= "R3";
-							 end
-					  end
 					  // Add
 					  "add" : begin
 							 LED <= 1'b1;
