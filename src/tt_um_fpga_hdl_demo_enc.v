@@ -8,12 +8,12 @@ module tt_um_fpga_hdl_demo_enc (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-    module PmodENC(
-        .clk(clk),
-        .JA(ui_in[3:0]),
-        .an(),
-        .seg(uo_out[6:0]),
-        .Led(uo_out[7])
-        );
+PmodENC enc (
+    .clk(clk),
+    .JA(ui_in[3:0]),
+    .an(uo_out[7]),
+    .seg(uo_out[6:0]),
+    .Led(uo_out[7])
+    );
 
 endmodule

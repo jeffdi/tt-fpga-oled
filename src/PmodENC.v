@@ -35,14 +35,14 @@ module PmodENC(
 	 // ===========================================================================
     input clk;
     input [7:4] JA;
-    output [3:0] an;
+    output an;
     output [6:0] seg;
     output [1:0] Led;
 
 	 // ===========================================================================
 	 // 							  Parameters, Regsiters, and Wires
 	 // ===========================================================================
-	 wire [3:0] an;
+	 wire an;
 	 wire [6:0] seg;
 	 wire [1:0] Led;
 	 
@@ -72,7 +72,7 @@ module PmodENC(
 				  .clk(clk),
 				  .SWT(JA[7]),
 				  .DispVal(EncO),
-				  .anode(an),
+				  .a(an),
 				  .segOut(seg)
 	 );
 endmodule
