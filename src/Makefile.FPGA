@@ -18,6 +18,10 @@ TOPCELL = tt_um_fpga_hdl_demo_oled
 PIN_DEF = tt3_asic_sim.pcf
 SOURCES = $(TOPCELL).v PmodOLEDCtrl.v Delay.v OledEX.v OledInit.v SpiCtrl.v
 
+TOPCELL = tt_um_fpga_hdl_demo_enc
+PIN_DEF = tt3_asic_sim.pcf
+SOURCES = $(TOPCELL).v PmodENC.v
+
 DEVICE = up5k
 PACKAGE = sg48
 
