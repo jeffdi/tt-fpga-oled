@@ -13,10 +13,10 @@ PROJECT = wokwi
 # PIN_DEF = tt3_asic_sim.pcf
 # SOURCES = $(TOPCELL).sv
 
-TOPCELL = tt_um_fpga_hdl_demo_oled
+#TOPCELL = tt_um_fpga_hdl_demo_oled
 # PIN_DEF = tt3_asic_sim_spi_out.pcf
-PIN_DEF = tt3_asic_sim.pcf
-SOURCES = $(TOPCELL).v PmodOLEDCtrl.v Delay.v OledEX.v OledInit.v SpiCtrl.v
+#PIN_DEF = tt3_asic_sim.pcf
+#SOURCES = $(TOPCELL).v PmodOLEDCtrl.v Delay.v OledEX.v OledInit.v SpiCtrl.v
 
 TOPCELL = tt_um_fpga_hdl_demo_enc
 PIN_DEF = tt3_asic_sim.pcf
